@@ -1,4 +1,3 @@
-
 # Diagrama de secuencia de notas
 
 ```mermaid
