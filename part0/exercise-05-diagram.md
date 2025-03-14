@@ -9,20 +9,19 @@ sequenceDiagram
 
     User->>Browser: User accesses notes
 
-    Browser->>Server: GET /exampleapp/spa
-    Server->>Browser: 200 OK (HTML)
-    Note right of Browser: The Browser gets the HTML code
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    Server->>Browser: Status Code 200 OK
+    Note right of Browser: The Browser gets (HTML) code
 
-    Browser->>Server: GET /exampleapp/main.css
-    Server->>Browser: 200 OK (CSS)
-    Note right of Browser: The Browser gets the CSS code
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    Server->>Browser: Status Code 200 OK
+    Note right of Browser: The Browser gets (CSS) code
 
-    Browser->>Server: GET /exampleapp/spa.js
-    Server->>Browser: 200 OK (JavaScript)
-    Note right of Browser: The Browser gets the JavaScript code
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    Server->>Browser: Status Code 200 OK
+    Note right of Browser: The Browser gets (JS) code
 
-    Browser->>Server: GET /exampleapp/data.json
-    Server->>Browser: 200 OK (JSON)
-    Note right of Browser: The Browser gets the JSON and displays the notes
-
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    Server->>Browser: Status Code 200 OK
+    Note right of Browser: The Browser gets (JSON) and displays the information
 ```
