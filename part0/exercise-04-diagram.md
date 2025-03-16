@@ -11,8 +11,8 @@ sequenceDiagram
     Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     Note right of Browser: Form data: { note: "user input" }
 
-    Server->>Browser: Status Code 302 Found (Redirect to /exampleapp/notes)
-    Browser->>Server: Status Code 200 OK GET https://studies.cs.helsinki.fi/exampleapp/notes
+    Browser->>Server: Status Code 302 Found (Redirect to /exampleapp/notes)
+    Server->>Browser: Status Code 200 OK GET https://studies.cs.helsinki.fi/exampleapp/notes
     Note right of Browser: Render notes
 
     Browser->>Server: Status Code 200 OK GET https://studies.cs.helsinki.fi/exampleapp/main.css

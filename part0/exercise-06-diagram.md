@@ -8,7 +8,7 @@ sequenceDiagram
     participant User
 
     User->>Browser: Write note
-    User->>Browser: Clik save
+    User->>Browser: Click save
     Note right of User: Write a note and save it
 
     Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
