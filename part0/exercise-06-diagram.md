@@ -15,5 +15,5 @@ sequenceDiagram
     Server->>Browser: Status Code 201 CREATED
     Note right of Server: The server saves the note
 
-    Note right to Browser: The Browser update the notes list
+    Note right of Browser: The Browser update the notes list
 ```
